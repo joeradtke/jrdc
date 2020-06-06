@@ -7,6 +7,18 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      <header class="head"></header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <%=link_to "Joeradtke.com",root_path,class: "navbar-brand"%>
+        <%=render 'nav'%>
+      </nav>
+      <div class="row">
+        <aside class="col-md-3"><%=render 'left'%></aside>
+    	<article class="col-md-6"><%= yield %></article>
+        <aside class="col-md-3"><%=render 'right'%></aside>
+      </div>
+      <footer class="foot"></footer>
+    </div>
   </body>
 </html>

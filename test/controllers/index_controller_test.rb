@@ -2,17 +2,17 @@ require 'test_helper'
 
 class IndexControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get index_index_url
+    get root_url
     assert_response :success
   end
 
   test "should get about" do
-    get index_about_url
+    get about_url
     assert_response :success
   end
 
   test "should get contact" do
-    get index_contact_url
+    get contact_url
     assert_response :success
   end
 

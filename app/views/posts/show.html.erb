@@ -1,0 +1,5 @@
+  <h1><%=@post.title%></h1>
+  <%if @post.photo.attached?%>
+    <%=image_tag @post.photo,height: '150',class: 'pl'%>
+  <%end%>
+  <p><%=@post.body%></p>

@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
 gem 'rails_admin'
+gem 'friendly_id'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do

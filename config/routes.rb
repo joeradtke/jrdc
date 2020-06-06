@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  resources :posts,only: [:show]
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'login',to: 'sessions#new'
   post 'login',to: 'sessions#create'

@@ -1,1 +1,5 @@
-LEFT CONTENT
+<div class="posts">
+  <%all_posts.each do |post|%>
+    <h4><%=link_to post.title,post%></h4>
+  <%end%>
+</div>

@@ -13,5 +13,9 @@ module ApplicationHelper
         when 'error' then "alert alert-error"
         when 'alert' then "alert alert-danger"
     end
-end
+  end
+  
+  def all_posts
+    Post.all
+  end
 end

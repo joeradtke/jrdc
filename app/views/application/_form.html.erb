@@ -1,0 +1,10 @@
+<%=simple_form_for @user do |f|%>
+  <%=f.input :username%>
+  <%=f.input :password%>
+  <%=f.input :password_confirmation%>
+  <%=f.input :email%>
+  <%=f.input :firstname%>
+  <%=f.input :lastname%>
+  <%=f.button :submit,@user.new_record? ? "Register" : "Update Profile",
+  	class: "btn btn-primary"%>
+<%end%>

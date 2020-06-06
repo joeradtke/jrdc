@@ -1,1 +1,5 @@
-RIGHT CONTENT
+<%if logged_in?%>
+  <h4>Logged In As <%=current_user.username%></h4>
+<%else%>
+  <h4>Not Logged In</h4>
+<%end%>

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: arnold
+  password_digest: $2a$12$8EfSqzMbx2EgUJbEQa1mO.W8ZkpMfvDbsPnRBNy3XdQyCyaV/q4q.
+  email: arnold@yahoo.com
+  firstname: Arnold
+  lastname: Radtke
+  admin: false
+
+two:
+  username: joeradtke
+  password_digest: $2a$12$MagJvfPcBjiNTpzukbyx8es4Xa606DIy2hd0qIpdG31KHuyFDsbMy
+  email: joeradtke@yahoo.com
+  firstname: Joseph
+  lastname: Radtke
+  admin: true

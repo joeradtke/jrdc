@@ -1,2 +1,9 @@
-<h1>Index#contact</h1>
-<p>Find me in app/views/index/contact.html.erb</p>
+<%if @page%>
+  <h1><%=@page.title%></h1>
+  <%if @page.photo.attached?%>
+    <%=image_tag @page.photo,height: '150',class: 'pl'%>
+  <%end%>
+  <p><%=@page.body%></p>
+<%else%>
+  <h1>Page Not Created Yet</h1>
+<%end%>

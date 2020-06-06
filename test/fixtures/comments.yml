@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: "XX"
-  slug: "xx"
-  body: "z"
+  body: 
+  user: users(:one)
+  post: posts(:one)
 
 two:
-  title: "YY"
-  slug: "yy"
-  body: nil
+  body: MyText
+  user: two
+  post: two

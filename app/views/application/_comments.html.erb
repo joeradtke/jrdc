@@ -1,0 +1,20 @@
+  <%if @post.comments.count==0%>
+    <h4>There are no comments</h4> 
+   <%else%>
+     <h4>COMMENTS</h4>
+     <%@post.comments.each do |comment|%>
+       <%if comment==@current_comment%>
+         <div class="current_comment">
+       <%else%>
+         <div>
+       <%end%>
+           <h6><%=comment.user.username%> commented on <%=comment.created_at.strftime("%b %d, %Y")%></h6>
+           <p><%=comment.body%></p>
+         </div>
+     <%end%>
+   <%end%>
+   <h5>ADD A COMMENT</h5>
+   <%=simple_form_for @comment,url:post_comments_path(@post),method: 'post',remote: true do |f|%>
+     <%=f.input :body%>
+     <%=f.button :submit,"Save Comment",class: "btn btn-primary"%>
+   <%end%>

@@ -7,7 +7,7 @@ class PostTest < ActiveSupport::TestCase
   end
   
   test "should not save post without a body" do
-    post=Post.new({:title=>"y"})
+    post=Post.new(:title=>"x")
     assert_not post.save,"Saved post without a body"
   end
 end

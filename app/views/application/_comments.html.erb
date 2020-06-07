@@ -8,7 +8,7 @@
        <%else%>
          <div>
        <%end%>
-           <h6><%=comment.user.username%> commented on <%=comment.created_at.strftime("%b %d, %Y")%></h6>
+           <h6 class="bld"><%=comment.user.username%> commented on <%=comment.created_at.strftime("%b %d, %Y")%></h6>
            <p><%=comment.body%></p>
          </div>
      <%end%>
